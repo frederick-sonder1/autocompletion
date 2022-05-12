@@ -1,0 +1,195 @@
+body{
+    /* background-color: rgb(170, 204, 249); */
+    padding:0;
+    font-family: Roboto;
+}
+body a{
+    text-decoration: noneactive;
+}
+h1 
+{
+    margin-top: 150px;
+
+}
+h1, h2
+{
+    font-size:50px;
+    text-align: center;
+}
+.imghome{
+    display: flex;
+    justify-content: center;
+}
+.wrapper
+{
+    max-width: 450px;
+    margin: 100px;
+    margin-left: 476px;
+}
+.wrapper .search-input
+{
+    position: relative;
+    border-radius: 5px;
+
+}
+.search-input input
+{ 
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.379);
+}
+form{
+    display: flex;
+    align-items: center;
+}
+
+
+/*--------------- 1ERE DIV -------------------*/
+.search-input .autocom-box
+{
+    padding: 0px;
+    max-height: 280px;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    width: 355px;
+}
+.search-input.active .autocom-box
+{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.379);
+    background:white;
+}
+.search-input.active .autocom-box li
+{
+    display: block;
+}
+.autocom-box li
+{
+    list-style: none;
+    padding: 8px 10px;
+    width: 100%;
+    cursor: default;
+    border:3px;
+    display: none;
+}
+.search-input.active .autocom-box li
+{
+    display: block;
+}
+.autocom-box li:hover
+{
+    background-color: rgb(0, 110, 255);
+    color: white;
+}
+/* button, input
+{
+    margin-top: 25px; 
+} */
+/*-------------- 2EME DIV --------------------*/
+.search-input .autocom-box2
+{
+    padding: 0px;
+    max-height: 280px;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    width: 355px;
+}
+.search-input.active .autocom-box2
+{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.379);
+    background:white;
+}
+.search-input.active .autocom-box2 li
+{
+    display: block;
+}
+.autocom-box2 li
+{
+    list-style: none;
+    padding: 8px 10px;
+    width: 100%;
+    cursor: default;
+    border:3px;
+    display: none;
+}
+.search-input.active .autocom-box2 li
+{
+    display: block;
+}
+.autocom-box2 li:hover
+{
+    background-color: rgb(0, 110, 255);
+    color: white;
+}
+
+
+/*------------------ Page ELEMENT.PHP ----------------------*/
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.description{
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+}
+
+.description p{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+/*---------- Page RECHRECHE.PHP -------------*/
+#listsearch{
+    margin: 150px;
+    margin-left: 600px;
+}
+.listsearch{
+    list-style-type: none;
+}
+.listsearch a{
+    text-decoration: none;
+}
+
+
+/*------------ MediaQuery ---------------*/
+@media screen and (max-width: 768px){
+.wrapper
+{
+    max-width: 100%;
+    margin: 0;
+    margin-left: 0;
+}
+.wrapper .search-input
+{
+    position: relative;
+    border-radius: 5px;
+
+}
+
+/*---------- Page RECHRECHE.PHP -------------*/
+#listsearch{
+    margin: 150px;
+}
+/*------------------ Page ELEMENT.PHP ----------------------*/
+.image img{
+    width: 90%;
+}
+}
